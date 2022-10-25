@@ -1,0 +1,114 @@
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(29,42,51);
+    color: #ffffff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 135px;
+    box-shadow: 0 0 1px 0 gray;
+
+}
+header select{
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: inherit;
+    color: #ffffff;
+    outline: none;
+
+}
+header ul li{
+    text-decoration: none;
+    display: inline;
+    margin: 0 16px;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+header ul li a:hover{
+    text-decoration: underline;
+}
+header li input{
+    background-color: rgb(248, 34, 69);
+    color: #ffffff;
+    border: none;
+    /* border-radius: 30%; */
+    border-radius: 70px;
+    font-weight: bold;
+    font-size: 12px;
+    width: 200px;
+    height: 40px;
+    /* padding: 10px 35px; */
+}
+header li input:hover{
+    cursor: pointer;
+    background-color: orangered;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 150px 0;
+}
+.box1{
+    width: 50%;
+}
+.box1 button{
+    padding: 25px 70px;
+    /* border-radius: 25%; */
+    border-radius: 70px;
+    font-weight: bold;
+    font-size: small;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background-color: rgb(248, 34, 69);
+    color: #ffffff;
+}
+.box1 button:hover{
+    cursor: pointer;
+    background-color: orangered;
+}
+.p1{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.p2{
+    text-transform: capitalize;
+    font-size: 15px;
+    /* font-weight: bold; */
+    margin-bottom: 10px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 135px 0;
+}
+.bus1{
+    /* background-color: red; */
+    margin: 5px 15px;
+}
+.bus1 p{
+    font-size: small;
+    /* font-weight: bold; */
+    text-transform: capitalize;
+}
+.bus1 span{
+    font-size: 12px;
+    /* font-weight: bold; */
+    text-transform: capitalize;
+}
+.fa-brands{
+    font-size: 35px;
+}
