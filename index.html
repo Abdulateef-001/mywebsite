@@ -1,120 +1,107 @@
 <!DOCTYPE html>
 <head>
-    <title>Registration</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
 </head>
 <style>
     body{
-        background-color: rgb(29,42,51);
-        font-family: Arial, Helvetica, sans-serif;
-
-    }
-    /* styling the form */
-    
-    form{
-        background: white;
-        padding: 20px;
-        margin: 0 auto;
-        width: 35%;
-        position: relative;
-        top: 50px;
-        border-radius: 15px;
-    }
-    .title{
-        text-align: center;
-        padding: 15px 0;
-    }
-    .form-group{
-        /* width: 100%; */
-        padding: 10px 0;
-        /* background-color: green; */
-    }
-    label{
-        font-weight: bold;
-    }
-    .form-control{
-        width: 100%;
-        margin: 4px auto;
-        padding: 8px 8px;
-        font-size: 15px;
-        /* border-color: red; */
-    }
-    .btn{
-        width: 100px;
-        padding: 15px 5px;
-        background-color: blue;
-        color: white;
-        border: none;
-        font-size: 20px;
-        
-    }
-    input [type='text']:focus{
-        background-color: gray;
-        color: white;
-    }
-    input [type='email']{
-        background: url(../myWebsite/images/img.jpg);
+        margin: 0;
+        padding: 0;
+        background: url(images/digital-art.webp);
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: 5px 5px;
-        padding: 15px 15px 10px 50px;
+        font-family: Arial, Helvetica, sans-serif;
     }
-    select{
+    .loginbox{                                                       
+        padding: 80px 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        width: 400px;
+        height: 420px;
+        background: rgba(0, 0, 0, .5);
+    }
+    .fa{
+        background-color: rgb(52,56,103);
         width: 100px;
-        padding: 16px 20px;
-        border: none;
-        border-radius: 4px;
-        background-color: wheat;
+        height: 100px;
+        text-align: center;
+        color: wheat;
+        font-size: 110px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        top: calc(-100px/2);
+        left: calc(50% - 50px);
     }
-    #country{
+    h2{
+        margin: 0;
+        padding: 0 0 20px;
+        color: rgb(245,212,99);
+        text-align: center;
+    }
+    .loginbox p{
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        color: white;
+    }
+    .loginbox input{
         width: 100%;
-        /* padding: 0 5px 0 ; */
+        margin-bottom: 20px;
     }
-    @media(max-width:900px){
-        .container{
-            background-color: aquamarine;
-        }
-        form{
-            width: 70%;
-        }
-
+    .loginbox input[type='email'], .loginbox input[type='password']{
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        background: transparent;
+        height: 40px;
+        font-size: 16px;
+        color: white;
+    } 
+    ::placeholder{
+        color: rgba(255, 255, 255, .5);
     }
-    @media(max-width: 600px){
-        .container{
-            background-color: black;
-        }
-        form{
-            width: 90%;
-        }
+    .loginbox input[type='submit']{
+        border: none;
+        outline: none;
+        color: white;
+        height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        background: rgb(114,87,39);
+        cursor: pointer;
+        border-radius: 20px;
+    }
+    .loginbox input[type='submit']:hover{
+        background-color: rgb(245,212,99);
+        color: aliceblue;
+    }
+    .loginbox a{
+        text-decoration: none;
+        color: white;
+        /* font-weight: bold; */
+        font-size: 14px;
+    }
+    .loginbox a:hover{
+        text-decoration: underline;
     }
 </style>
 <body>
-    <div class="container">
+    <div class="loginbox">
+      /   <i class="fa fa-user"></i>
+        <h2>LOGIN HERE</h2>
         <form action="tier.html">
-            <h1 class="title">Register</h1>
-            <div class="form-group">
-                <label for="fullname">Fullname</label>
-                <input type="text" class="form-control" placeholder="Fullname">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" placeholder="Email">
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="text" class="form-control" placeholder="Phone">
-            </div>
-            <div class="form-group">
-                <label for="country">Select</label><br>
-                <select name="" id="country">
-                    <option value="Gha">Ghana</option>
-                    <option value="Lib">Liberia</option>
-                    <option value="Sen">Senegal</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Register" class="btn">
-            </div>
-        </form>
+            <p>Email</p>
+            <input type="email" placeholder="name@domain.com" required>
+            <p>Password</p>
+            <input type="password" placeholder="*******" required>
+            <input type="submit" value="SIGN IN">
+            <a href="">Forgot password</a>
 
-    </div>
+        </form>
+    </div>        
 </body>
 </html>
